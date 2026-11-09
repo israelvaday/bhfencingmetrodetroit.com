@@ -51,7 +51,7 @@ or ask and we'll do it.
 ## ✅ Already done
 - **Phone (313) 236-4558** wired site-wide — tap-to-call in the header, footer, mobile bar,
   every CTA, and schema `telephone`.
-- Matomo analytics installed on every page (site ID **22**, `matomo.alphalockandsafe.com`).
+- Matomo analytics installed on every page (site ID **22**, `matomo.gothamsitestudio.com`).
 - 37 pages: home, 10 services, services hub, 18 city pages, areas hub, about, contact, reviews, financing, gallery, FAQ.
 - Full technical SEO: unique titles/descriptions, canonicals, JSON-LD (RoofingContractor + Service + FAQPage
   + BreadcrumbList, no street address, GeoCircle service radius), Open Graph + Twitter cards, sitemap.xml, robots.txt,

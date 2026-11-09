@@ -44,7 +44,7 @@ BIZ = dict(
     lat=42.45, lng=-83.15, radius=56327,
     facebook="", instagram="", google="",   # placeholders — set real profile URLs
     license_no="",                            # placeholder — client to confirm
-    matomo_site_id="22",                      # Matomo site ID (matomo.alphalockandsafe.com)
+    matomo_site_id="22",                      # Matomo site ID (matomo.gothamsitestudio.com)
 )
 HAS_PHONE = bool(BIZ["tel"])
 
@@ -262,14 +262,14 @@ MATOMO = """<!-- Matomo -->
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="https://matomo.alphalockandsafe.com/matomo/";
+    var u="https://matomo.gothamsitestudio.com/matomo/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
     _paq.push(['setSiteId', '22']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.alphalockandsafe.com/matomo/matomo.php?idsite=22&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.gothamsitestudio.com/matomo/matomo.php?idsite=22&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->"""
 
 # --------------------------------------------------------------------------- #

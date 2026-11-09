@@ -8,7 +8,7 @@ metro Detroit and suburbs within 35 miles (Wayne, Oakland & Macomb counties).
 - **Hours:** Sun–Thu 9am–5pm · Fri 9am–12pm · Sat closed
 - **Domain:** https://bhroofingmetrodetroit.com
 - **Host:** GitHub Pages (custom domain via `CNAME`)
-- **Analytics:** Matomo (site ID 22, matomo.alphalockandsafe.com)
+- **Analytics:** Matomo (site ID 22, matomo.gothamsitestudio.com)
 
 ## Structure
 
