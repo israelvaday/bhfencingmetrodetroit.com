@@ -453,7 +453,7 @@ def footer():
     </div></div>
     <div class="footer-bottom"><div class="container">
       <span>© {datetime.date.today().year} {esc(BIZ["name"])}. All rights reserved.{lic} · Built, designed &amp; promoted by <a href="https://www.gothamsitestudio.com/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Gotham Site Studio</a></span>
-      <span><a href="/service-areas/">Service Areas</a> · <a href="/services/">Services</a> · <a href="/about/">About</a> · <a href="/reviews/">Reviews</a> · <a href="/faq/">FAQ</a> · <a href="/gallery/">Gallery</a> · <a href="/financing/">Financing</a> · <a href="/contact/">Contact</a> · <a href="/sitemap.xml">Sitemap</a></span>
+      <span><a href="/service-areas/">Service Areas</a> · <a href="/services/">Services</a> · <a href="/about/">About</a> · <a href="/reviews/">Reviews</a> · <a href="/faq/">FAQ</a> · <a href="/gallery/">Gallery</a> · <a href="/financing/">Financing</a> · <a href="/contact/">Contact</a> · <a href="/privacy-policy/">Privacy Policy</a> · <a href="/sitemap.xml">Sitemap</a></span>
     </div></div>
   </footer>'''
 
@@ -1133,6 +1133,70 @@ def build_thanks():
            "Thanks for contacting BH Roofing. We'll be in touch shortly.", body, graph,
            noindex=True)
 
+def build_privacy():
+    body = f'''<section class="page-hero"><div class="container">
+      <div style="max-width:760px"><span class="eyebrow">Legal</span><h1>Privacy Policy</h1>
+      <p>How {esc(BIZ["name"])} collects, uses, and protects your personal information when you visit our website or contact us for service in Metro Detroit.</p></div>
+    </div></section>
+    {breadcrumb([("Home","/"),("Privacy Policy","/privacy-policy/")])}
+    <section class="section"><div class="container"><div class="prose wide" style="margin-inline:auto">
+      <p><strong>Effective Date:</strong> January 1, 2026</p>
+      <p>{esc(BIZ["name"])} (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy explains what information we collect when you visit <strong>{esc(BIZ["domain"])}</strong>, call or text us, or submit a service request in Metro Detroit, Michigan, how we use and safeguard that information, and your choices regarding your data.</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect information in two main ways:</p>
+      <ul>
+        <li><strong>Information You Provide Directly:</strong> When you fill out our contact form, call us, send an SMS text message, or email us, we may collect your name, phone number, email address, property address or city/ZIP code, and details about your service or inspection request.</li>
+        <li><strong>Information Collected Automatically:</strong> When you browse our website, we automatically collect standard technical and usage information such as your IP address, browser type, device type, operating system, referring URLs, pages viewed, and the dates and times of your visits through cookies and analytics tools, including Matomo analytics.</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>We use the information we collect to operate our business and deliver local service across Wayne, Oakland, and Macomb counties, including:</p>
+      <ul>
+        <li>Scheduling on-site visits and technician dispatches</li>
+        <li>Responding to your inquiries, providing estimates, evaluating your project or repair needs, and providing service recommendations</li>
+        <li>Communicating with you by phone, SMS text, or email about appointments, arrival windows, and follow-up support</li>
+        <li>Providing customer support and honoring our workmanship guarantee</li>
+        <li>Monitoring website performance, diagnosing technical issues, improving user experience, and preventing spam or fraudulent submissions</li>
+      </ul>
+
+      <h2>SMS &amp; Phone Communications</h2>
+      <p>If you call us, text us, or provide your phone number through our website contact form, you consent to receive phone calls and SMS text messages from {esc(BIZ["name"])} regarding your service inquiry, appointment scheduling, dispatch updates, and customer support.</p>
+      <ul>
+        <li><strong>Opt-Out:</strong> You may opt out of receiving SMS text messages at any time by replying <strong>STOP</strong> to any message we send, or by contacting us at <a href="tel:{BIZ["tel"]}">{esc(BIZ["phone"])}</a> or <a href="mailto:{BIZ["email"]}">{esc(BIZ["email"])}</a>. You may reply <strong>HELP</strong> for assistance.</li>
+        <li><strong>Message &amp; Data Rates:</strong> Standard message and data rates from your wireless carrier may apply. Message frequency varies based on your active service request.</li>
+        <li><strong>No Third-Party Marketing Sharing:</strong> We never sell, rent, or share your mobile phone number or SMS opt-in consent data with third parties or affiliates for marketing or promotional purposes.</li>
+      </ul>
+
+      <h2>Information Sharing &amp; Disclosure</h2>
+      <p>We do not sell, rent, or trade your personal information to third parties. We share personal information only in the following limited situations:</p>
+      <ul>
+        <li><strong>Service Delivery &amp; Trusted Providers:</strong> With our field technicians, dispatch personnel, and trusted service providers (such as secure form routing, hosting, analytics, or communication tools) strictly as necessary to respond to and fulfill your service request.</li>
+        <li><strong>Financing Partners (At Your Request):</strong> If you choose to apply for financing through a third-party lender, the information you submit on that application is handled in accordance with that lender&rsquo;s privacy policy.</li>
+        <li><strong>Legal Obligations &amp; Protection:</strong> When required by law, subpoena, court order, or government regulation, or when necessary to protect the safety, rights, or property of {esc(BIZ["name"])}, our customers, or the public.</li>
+      </ul>
+
+      <h2>Cookies &amp; Analytics</h2>
+      <p>Our website uses first-party cookies and Matomo analytics to measure site traffic, understand which services and Metro Detroit service areas visitors are researching, and record aggregate actions such as phone-link clicks or form submissions. We also use Cloudflare Turnstile on our contact form to protect against automated spam without tracking you across the web.</p>
+      <p>You can configure your web browser to block or delete cookies at any time. Blocking cookies will not prevent you from reading our pages or calling us directly.</p>
+
+      <h2>Data Security &amp; Retention</h2>
+      <p>We maintain reasonable administrative, technical, and physical safeguards, including HTTPS encryption and restricted access to customer inquiries, to protect your personal information against unauthorized access, loss, misuse, or alteration. We retain personal information only for as long as needed to complete your service request, maintain warranty and service records, and comply with applicable legal, tax, and accounting requirements.</p>
+
+      <h2>Your Privacy Rights &amp; Contact Information</h2>
+      <p>You may request to access, update, correct, or delete the personal information we hold about you, or opt out of future communications at any time. To make a request or ask any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li><strong>Business Name:</strong> {esc(BIZ["name"])}</li>
+        <li><strong>Service Area:</strong> Metro Detroit, MI (Wayne, Oakland &amp; Macomb Counties)</li>
+        <li><strong>Phone:</strong> <a href="tel:{BIZ["tel"]}">{esc(BIZ["phone"])}</a></li>
+        <li><strong>Email:</strong> <a href="mailto:{BIZ["email"]}">{esc(BIZ["email"])}</a></li>
+      </ul>
+    </div></div></section>
+    {cta_band()}'''
+    render("/privacy-policy/", f"Privacy Policy | {BIZ['name']}",
+           f"Privacy Policy for {BIZ['name']}. Learn how we collect, use, and protect your personal information when you request service in Metro Detroit.",
+           body, [breadcrumb_node([("Home","/"),("Privacy Policy","/privacy-policy/")])])
+
 def build_404():
     body = f'''<section class="section" style="min-height:56vh;display:grid;place-items:center;text-align:center"><div class="container" style="max-width:640px">
       <span class="eyebrow" style="justify-content:center">Error 404</span>
@@ -1161,7 +1225,7 @@ def page_wrap(path,title,desc,body,graph,robots="index,follow,max-image-preview:
 #  SITEMAP / ROBOTS / MANIFEST / CNAME
 # --------------------------------------------------------------------------- #
 def build_meta_files():
-    urls = ["/","/services/","/service-areas/","/about/","/reviews/","/financing/","/gallery/","/faq/","/contact/"]
+    urls = ["/","/services/","/service-areas/","/about/","/reviews/","/financing/","/gallery/","/faq/","/contact/","/privacy-policy/"]
     urls += [svc_url(s) for s in SVC_ORDER]
     urls += [city_url(s) for s in CITY_ORDER]
     entries = ""
@@ -1207,10 +1271,11 @@ def main():
     build_contact()
     build_gallery()
     build_faq_hub()
+    build_privacy()
     build_thanks()
     build_404()
     build_meta_files()
-    n = 9 + len(SVC_ORDER) + len(CITY_ORDER)
+    n = 10 + len(SVC_ORDER) + len(CITY_ORDER)
     print(f"Built {n} pages + sitemap/robots/manifest/CNAME.")
 
 if __name__ == "__main__":
